@@ -1,28 +1,4 @@
-лют. 22, 2023 4:02:16 ДП com.example.mykursova.taxes.Taxes SumTaxes
+лют. 22, 2023 10:01:44 ДП com.example.mykursova.taxes.Taxes SumTaxes
 INFO: Сума податку
-лют. 22, 2023 4:02:16 ДП com.example.mykursova.taxes.Taxes SetTaxes
-INFO: Визначення сукупності розмірів податків
-лют. 22, 2023 4:02:25 ДП com.example.mykursova.taxes.Taxes sortTaxes
-INFO: Сортування податків за розміром податку та за зростанням
-лют. 22, 2023 4:02:25 ДП com.example.mykursova.taxes.Taxes info
-INFO: Друк списку податків
-лют. 22, 2023 4:02:25 ДП com.example.mykursova.taxes.Taxes SumTaxes
-INFO: Сума податку
-лют. 22, 2023 4:02:25 ДП com.example.mykursova.taxes.Taxes SetTaxes
-INFO: Визначення сукупності розмірів податків
-лют. 22, 2023 4:02:40 ДП com.example.mykursova.taxes.Taxes SumTaxes
-INFO: Сума податку
-лют. 22, 2023 4:02:40 ДП com.example.mykursova.taxes.Taxes SetTaxes
-INFO: Визначення сукупності розмірів податків
-лют. 22, 2023 4:02:42 ДП com.example.mykursova.taxes.Taxes sortTaxes
-INFO: Сортування податків за розміром податку та за зростанням
-лют. 22, 2023 4:02:42 ДП com.example.mykursova.taxes.Taxes info
-INFO: Друк списку податків
-лют. 22, 2023 4:02:42 ДП com.example.mykursova.taxes.Taxes SumTaxes
-INFO: Сума податку
-лют. 22, 2023 4:02:42 ДП com.example.mykursova.taxes.Taxes SetTaxes
-INFO: Визначення сукупності розмірів податків
-лют. 22, 2023 4:03:36 ДП com.example.mykursova.taxes.Taxes SumTaxes
-INFO: Сума податку
-лют. 22, 2023 4:03:36 ДП com.example.mykursova.taxes.Taxes SetTaxes
+лют. 22, 2023 10:01:44 ДП com.example.mykursova.taxes.Taxes SetTaxes
 INFO: Визначення сукупності розмірів податків

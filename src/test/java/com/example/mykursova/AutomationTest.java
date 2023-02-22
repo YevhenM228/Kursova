@@ -25,7 +25,7 @@ public class AutomationTest extends ApplicationTest {
         try {
             Parent root = FXMLLoader.load(Objects.requireNonNull(Main.class.getResource("design.fxml")));
             Scene scene = new Scene(root);
-            Image icon = new Image("D:\\Kursova\\src\\main\\resources\\com\\example\\mykursova\\icon.png");
+            Image icon = new Image("E:\\Kursova\\src\\main\\resources\\com\\example\\mykursova\\icon.png");
             stage.getIcons().add(icon);
             stage.setResizable(false);
             String css = Objects.requireNonNull(this.getClass().getResource("style.css")).toExternalForm();
