@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="516.0" prefWidth="951.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mykursova.Controller">
+    <children>
+        <ImageView fitHeight="401.0" fitWidth="951.0" layoutX="-2.0" layoutY="57.0">
+            <image>
+                <Image url="@bj.jpg" />
+            </image>
+        </ImageView>
+        <ListView fx:id="setTaxes" layoutX="776.0" layoutY="190.0" opacity="0.9" prefHeight="189.0" prefWidth="133.0" style="-fx-background-color: #3aff2c;" />
+        <Label fx:id="labelSet" layoutX="776.0" layoutY="153.0" prefHeight="23.0" prefWidth="133.0" text="Набір податків:" textFill="#3aff2c">
+            <font>
+                <Font name="Univermag-Regular" size="12.0" />
+            </font>
+        </Label>
+        <Label fx:id="totalSum" layoutX="120.0" layoutY="402.0" prefHeight="23.0" prefWidth="307.0" text="Сума податків:" textFill="#3aff2c">
+            <font>
+                <Font name="Univermag-Regular" size="12.0" />
+            </font>
+        </Label>
+        <Button fx:id="searchTax" layoutX="635.0" layoutY="285.0" mnemonicParsing="false" onAction="#searchTax" prefHeight="42.0" prefWidth="118.0" style="-fx-background-color: #1cbd12;" text="Пошук податку" textFill="WHITE">
+            <font>
+                <Font name="Quanty-Special-DEMO" size="12.0" />
+            </font></Button>
+        <AnchorPane layoutX="29.0" layoutY="77.0" prefHeight="96.0" prefWidth="503.0">
+            <children>
+                <ChoiceBox fx:id="choiceBox" layoutX="13.0" layoutY="50.0" prefHeight="28.0" prefWidth="160.0" style="-fx-background-radius: 5; -fx-border-radius: 5; -fx-border-width: 1.5;" />
+                <Label fx:id="labelInputSizeIncome" layoutX="198.0" layoutY="18.0" prefHeight="36.0" prefWidth="144.0" text="Введіть розмір доходу" textFill="#3aff2c">
+                    <font>
+                    </font></Label>
+                <TextField fx:id="sizeIncome" layoutX="198.0" layoutY="51.0" opacity="0.9" prefWidth="160.0" style="-fx-background-radius: 3; -fx-border-radius: 3; -fx-border-width: 1.5;" />
+                <Button fx:id="addIncome" layoutX="387.0" layoutY="51.0" mnemonicParsing="false" onAction="#addTax" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #1cbd12;" text="додати" textFill="WHITE" />
+                <Label fx:id="labelChooseIncome" layoutX="15.0" layoutY="18.0" prefHeight="36.0" prefWidth="144.0" text="Виберіть дохід" textFill="#3aff2c">
+                    <font>
+                        <Font name="Quanty-Special-DEMO" size="12.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <TableView fx:id="table" centerShape="false" layoutX="8.0" layoutY="166.0" nodeOrientation="LEFT_TO_RIGHT" opacity="0.9" prefHeight="214.0" prefWidth="490.0" scaleShape="false">
+            <columns>
+                <TableColumn fx:id="name" prefWidth="131.20000648498535" text="Назва" />
+                <TableColumn fx:id="size" minWidth="2.666656494140625" prefWidth="148.00003051757812" text="Розмір" />
+                <TableColumn fx:id="percentage" prefWidth="79.99993896484375" text="Відсоток" />
+                <TableColumn fx:id="tax" prefWidth="128.79999389648435" text="Податок" />
+            </columns>
+        </TableView>
+        <Button fx:id="searchInc" layoutX="508.0" layoutY="285.0" mnemonicParsing="false" onAction="#searchInc" prefHeight="42.0" prefWidth="124.0" style="-fx-background-color: #1cbd12;" text="Пошук доходу" textFill="WHITE">
+
+        </Button>
+        <Button fx:id="sortAsc" layoutX="507.0" layoutY="384.0" mnemonicParsing="false" onAction="#sortAsc" prefHeight="36.0" prefWidth="106.0" style="-fx-background-color: #1cbd12;" text="За зростанням" textFill="WHITE">
+        </Button>
+        <Button fx:id="sortDesc" layoutX="624.0" layoutY="384.0" mnemonicParsing="false" onAction="#sortDesc" prefHeight="36.0" prefWidth="106.0" style="-fx-background-color: #1cbd12;" text="За спаданням" textFill="WHITE">
+        </Button>
+        <TextField fx:id="rangeA" layoutX="538.0" layoutY="200.0" opacity="0.9" prefHeight="28.0" prefWidth="69.0" style="-fx-background-radius: 3; -fx-border-radius: 3; -fx-border-color: #1cbd12; -fx-border-width: 1.5;" />
+        <Label fx:id="labelInputRange" layoutX="535.0" layoutY="155.0" prefHeight="36.0" prefWidth="193.0" text="Введіть діапазон для пошуку:" textFill="#3aff2c">
+            <font>
+                <Font name="Quanty-Special-DEMO" size="12.0" />
+            </font>
+        </Label>
+        <TextField fx:id="rangeB" layoutX="632.0" layoutY="200.0" opacity="0.9" prefHeight="28.0" prefWidth="69.0" style="-fx-background-radius: 3; -fx-border-radius: 3; -fx-border-color: #1cbd12; -fx-border-width: 1.5;" />
+        <Button fx:id="submit" layoutX="582.0" layoutY="248.0" mnemonicParsing="false" onAction="#submit" prefHeight="25.0" prefWidth="69.0" style="-fx-background-color: #1cbd12;" text="Окей" textFill="WHITE" />
+        <Button fx:id="writeToDataBase" layoutX="763.0" layoutY="396.0" mnemonicParsing="false" onAction="#writeToDataBase" prefHeight="36.0" prefWidth="160.0" style="-fx-background-color: #1cbd12;" text="Записати до бази даних" textFill="WHITE">
+            <font>
+                <Font name="Quanty-Special-DEMO" size="12.0" />
+            </font>
+        </Button>
+        <AnchorPane layoutY="458.0" prefHeight="58.0" prefWidth="951.0" style="-fx-background-color: #1cbd12;">
+            <children>
+                <Label fx:id="WriteToDataBase" layoutX="300.0" layoutY="14.0" prefHeight="36.0" prefWidth="465.0" text="Дані з таблиці успішно записані до бази даних!!!" textFill="WHITE">
+                </Label>
+            </children></AnchorPane>
+        <AnchorPane prefHeight="80.0" prefWidth="951.0" style="-fx-background-color: #1cbd12;">
+            <children>
+                <Label fx:id="title" layoutX="403.0" layoutY="19.0" prefHeight="42.0" prefWidth="229.0" text="Податки" textFill="WHITE">
+                    <font>
+                        <Font name="Univermag Regular" size="24.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <Label fx:id="totalSumOfTax1" layoutX="587.0" layoutY="346.0" prefHeight="23.0" prefWidth="106.0" text="Сортування:" textFill="#3aff2c">
+            <font>
+                <Font name="Univermag-Regular" size="12.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

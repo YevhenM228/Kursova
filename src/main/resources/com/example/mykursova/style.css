@@ -1,0 +1,88 @@
+
+#labelSet{
+    -fx-font-size: 13;
+}
+
+#totalSum{
+    -fx-font-size: 13;
+}
+#title{
+    -fx-font-size: 28;
+    -fx-font-allign: center;
+    -fx-font-weight: bold;
+}
+#labelChooseIncome{
+    -fx-font-size: 12;
+}
+#labelInputSizeIncome{
+    -fx-font-size: 12;
+}
+#labelInputRange{
+    -fx-font-size: 13;
+}
+#WriteToDataBase{
+    -fx-font-size: 15;
+}
+#name{
+    -fx-font-size: 12;
+    -fx-font-family: sans-serif;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+#size{
+    -fx-font-size: 12;
+    -fx-font-family: sans-serif;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+#tax{
+    -fx-font-size: 12;
+    -fx-font-family: sans-serif;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+#percentage{
+    -fx-font-size: 12;
+    -fx-font-family: sans-serif;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.button{
+    -fx-font-size: 12;
+    -fx-font-allign: center;
+    -fx-font-weight: bold;
+}
+
+.table-row-cell{
+    -fx-background-color: #1cbd12;
+    -fx-border-color: #1cbd12;
+    -fx-table-cell-border-color: transparent;
+    -fx-text-fill: white;
+}
+.list-cell{
+    -fx-background-color: #1cbd12;
+    -fx-border-color: #1cbd12;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: #1cbd12;
+}
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+.table-view .column-header {
+    -fx-background-color: transparent;
+    -fx-text-alignment: left;
+    -fx-alignment: left;
+}
+.table-column{
+    -fx-alignment: center;
+}
+.table-view .column-header .label {
+    -fx-alignment: center;
+}
+
